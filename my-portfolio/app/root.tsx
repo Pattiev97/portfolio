@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from 'react-router';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import type { Route } from './+types/root';
 import './app.css';
 
@@ -47,10 +47,12 @@ export default function App() {
     <>
       <header>
         <nav className="nav__container">
-          <Link to="/">Domů</Link>
-          <Link to="/about">O mně</Link>
-          <Link to="/contact">Kontakt</Link>
-          <Link to="/projects">Projekty</Link>
+          <NavLink to="/" end>
+            Domů
+          </NavLink>
+          <NavLink to="/about">O mně</NavLink>
+          <NavLink to="/contact">Kontakt</NavLink>
+          <NavLink to="/projects">Projekty</NavLink>
         </nav>
       </header>
 
