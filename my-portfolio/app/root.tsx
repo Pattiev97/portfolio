@@ -51,14 +51,21 @@ export default function App() {
             Domů
           </NavLink>
           <NavLink to="/about">O mně</NavLink>
-          <NavLink to="/contact">Kontakt</NavLink>
           <NavLink to="/projects">Projekty</NavLink>
+          <NavLink to="/contact">Kontakt</NavLink>
         </nav>
       </header>
-
       <main>
+        <div className="banner">
+          <img src="/Patricie_vyhlidalova.JPG" alt="Patricie Vyhlídalová" />
+          <div className="name__surname">
+            <h1 className="name">PATRICIE</h1>
+            <h1 className="surname">VYHLÍDALOVÁ</h1>
+          </div>
+        </div>
         <Outlet />
       </main>
+      <footer></footer>
     </>
   );
 }
